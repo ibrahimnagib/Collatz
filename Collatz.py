@@ -1,3 +1,4 @@
+__author__ = 'ibrahim'
 #!/usr/bin/env python3
 
 # ---------------------------
@@ -33,9 +34,24 @@ def collatz_eval (i, j) :
     return the max cycle length of the range [i, j]
     """
     # <your code>
-    for x in range(i,j+1)
-        
-    return 1
+    c=1
+    d=0
+    for x in range(i,j+1):
+        while x!=1:
+            if (x%2)==0:
+                x=(x//2)
+                c+=1
+            else:
+                x= (3*x+1)//2
+                c+=2
+
+        if c>=d:
+            d=c
+            c=1
+        else:
+            c=1
+
+    return d
 
 # -------------
 # collatz_print
@@ -67,3 +83,4 @@ def collatz_solve (r, w) :
         i, j = a
         v = collatz_eval(i, j)
         collatz_print(w, i, j, v)
+
