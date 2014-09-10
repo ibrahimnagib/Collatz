@@ -40,6 +40,7 @@ def collatz_eval (i, j) :
     c=1
     d=0
     for x in range(i,j+1):
+        assert c>0
         while x!=1:
             if (x%2)==0:
                 x=(x//2)
