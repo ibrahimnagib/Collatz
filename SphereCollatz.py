@@ -1,6 +1,3 @@
-#Ibrahim Nagib IN2422
-#SphereCollatz.py
-
 __author__ = 'ibrahim'
 #!/usr/bin/env python3
 
@@ -39,8 +36,9 @@ def collatz_eval (i, j) :
     # <your code>
     c=1
     d=0
+    if i>j:
+        i,j=j,i
     for x in range(i,j+1):
-        assert c>0
         while x!=1:
             if (x%2)==0:
                 x=(x//2)
@@ -56,7 +54,6 @@ def collatz_eval (i, j) :
             c=1
 
     return d
-
 # -------------
 # collatz_print
 # -------------
@@ -87,7 +84,6 @@ def collatz_solve (r, w) :
         i, j = a
         v = collatz_eval(i, j)
         collatz_print(w, i, j, v)
-
 #!/usr/bin/env python3
 
 # ------------------------------
@@ -132,3 +128,8 @@ collatz_solve(sys.stdin, sys.stdout)
 
 % pydoc3 -w Collatz
 """
+
+
+
+
+
