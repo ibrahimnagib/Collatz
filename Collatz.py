@@ -42,18 +42,14 @@ def collatz_eval (i, j) :
     if i>j :
         i,j=j,i
 
-    if i< (j/2) :
+    if i < (j/2) :
         i = int(j/2)
-   # m= (j//2)+1
-    #if i<m:
-     #   i,m=m,i
+    m= (j//2)+1
+    if i<m:
+        i = m
 
     for x in range(i,j+1):
         while x != 1:
-            for a in range(0,175000):
-                if c_list[a][0] == x:
-                    max_cycle = c_list[a][1]
-                    break  
             if (x%2) == 0:
                 x = (x//2)
                 incrementor += 1
