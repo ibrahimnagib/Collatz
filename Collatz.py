@@ -11,7 +11,6 @@ __author__ = 'ibrahim'
 # collatz_read
 # ------------
 
-c_list = [0]*175000
 
 def collatz_read (r) :
     """
@@ -36,6 +35,7 @@ def collatz_eval (i, j) :
     return the max cycle length of the range [i, j]
     """
     # <your code>
+    c_list = [0]*175000
 
     incrementor = 1
     max_cycle = 0

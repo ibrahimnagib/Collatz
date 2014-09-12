@@ -1,4 +1,4 @@
-all:
+call:
 
 clean:
 	rm -f .coverage

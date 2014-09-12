@@ -1,0 +1,77 @@
+commit 265dfcc4ccf0255006c9a9516eeaa6cfd30cdb39
+Author: ibrahimnagib <ibrahim.nagib@utexas.edu>
+Date:   Thu Sep 11 21:44:36 2014 -0500
+
+    Final files for submission
+    
+    All of the final submission files
+
+commit d427b7af664aff969d06a055040e5114c79ea768
+Author: ibrahimnagib <ibrahim.nagib@utexas.edu>
+Date:   Thu Sep 11 14:33:36 2014 -0500
+
+    First implemented working cache
+    
+    working cache using a list
+
+commit 9595a09952221f0e54ca3eeb4e0440f4815d5b57
+Author: ibrahimnagib <ibrahim.nagib@utexas.edu>
+Date:   Wed Sep 10 19:58:40 2014 -0500
+
+    First code to get sphere acceptance
+    
+    This is the first code to be accepted on sphere, both collatz and
+    spherecollatz updated with optimizations
+
+commit 3ac7cac8ce98453a2d83a85196de93c5fba604d6
+Author: ibrahimnagib <ibrahim.nagib@utexas.edu>
+Date:   Wed Sep 10 19:33:59 2014 -0500
+
+    more bug fixes for sphere
+    
+    fixed a few bugs for sphere to accept the code
+
+commit d52f45e50545aec225b750962149dd7dc802d677
+Author: ibrahimnagib <ibrahim.nagib@utexas.edu>
+Date:   Wed Sep 10 18:53:22 2014 -0500
+
+    Fixed bugs and optimized code
+
+commit ebf299396119328693a29912b3e5de62285ee8a7
+Author: ibrahimnagib <ibrahim.nagib@utexas.edu>
+Date:   Wed Sep 10 13:14:06 2014 -0500
+
+    SphereCollatz
+    
+    Created SphereCollatz.py by combining runCollatz.py and Collatz.py
+    together for input into sphere
+
+commit 166dca589c7bfd8e4a744498d1cd3ac5fc3b3c2a
+Author: ibrahimnagib <ibrahim.nagib@utexas.edu>
+Date:   Wed Sep 10 00:17:51 2014 -0500
+
+    First working code
+    
+    first code that works
+
+commit 490ab812d99f6838e44a5e9bd36b8364b3c7dfa0
+Author: ibrahimnagib <ibrahim.nagib@utexas.edu>
+Date:   Tue Sep 9 21:52:13 2014 -0500
+
+    started a for loop
+    
+    started the for loop to test through the range given by the two inputs
+
+commit 4508feae680dbf897566a407ca91dcfe66fc7101
+Author: ibrahimnagib <ibrahim.nagib@utexas.edu>
+Date:   Mon Sep 8 18:17:56 2014 -0500
+
+    just testing
+    
+    testing commit and push
+
+commit e7a7e1135791f5b35960f1b432f31281d1506300
+Author: ibrahimnagib <ibrahim.nagib@utexas.edu>
+Date:   Mon Sep 8 18:09:19 2014 -0500
+
+    Copied files from class Repo
