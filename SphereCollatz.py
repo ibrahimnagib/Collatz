@@ -10,20 +10,7 @@ __author__ = 'ibrahim'
 # ------------
 # collatz_read
 # ------------
-
-c_list = [0]*175000
-
-def collatz_cache(i,j):
-    if i>j :
-        i,j=j,i
-    for x in range (i,j):
-        if c_list[x] != 0:
-            v = c_list[x]
-            v = collatz_eval(x,j)
-        else:
-            v = collatz_eval(i, j)
-        return v
-
+#testing push
 def collatz_read (r) :
     """
     read two ints
@@ -46,36 +33,31 @@ def collatz_eval (i, j) :
     j the end       of the range, inclusive
     return the max cycle length of the range [i, j]
     """
-    # <your code>
+   
+
+    c_list = [0]*175000
 
     incrementor = 1
     max_cycle = 0
-    #if i>j :
-    #    i,j=j,i
+    if i>j :
+        i,j=j,i
 
     if i < (j/2) :
         i = int(j/2)
-
     m= (j//2)+1
     if i<m:
         i = m
 
     for x in range(i,j+1):
-        initial_x = x
-        #if x == 1:
-        #    c_list[x] = x
         while x != 1:
             if (x%2) == 0:
                 x = (x//2)
                 incrementor += 1
-                #c_list[x] = incrementor
             else:
                 x= (3*x+1)//2
                 incrementor += 2
-            c_list[initial_x] = incrementor
 
         if incrementor >= max_cycle:
-            #c_list[x] = incrementor
             max_cycle = incrementor
             incrementor = 1
         else:
@@ -111,57 +93,5 @@ def collatz_solve (r, w) :
         if not a :
             return
         i, j = a
-        v = collatz_cache(i,j)
-        #v = collatz_eval(i, j)
+        v = collatz_eval(i, j)
         collatz_print(w, i, j, v)
-
-
-#!/usr/bin/env python3
-
-# ------------------------------
-# projects/collatz/RunCollatz.py
-# Copyright (C) 2014
-# Glenn P. Downing
-# ------------------------------
-
-# -------
-# imports
-# -------
-
-import sys
-
-
-# ----
-# main
-# ----
-
-collatz_solve(sys.stdin, sys.stdout)
-
-"""
-% cat RunCollatz.in
-1 10
-100 200
-201 210
-900 1000
-
-
-
-% RunCollatz.py < RunCollatz.in > RunCollatz.out
-
-
-
-% cat RunCollatz.out
-1 10 1
-100 200 1
-201 210 1
-900 1000 1
-
-
-
-% pydoc3 -w Collatz
-"""
-
-
-
-
-
